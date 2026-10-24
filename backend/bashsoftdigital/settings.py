@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
-# import environ
 import os
 from pathlib import Path
 
@@ -21,21 +20,15 @@ smtplib.SMTP.debuglevel = 1
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# env = environ.Env()
-# environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env("DJANGO_SECRET_KEY")
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = env.bool("DJANGO_DEBUG", default=False)
 DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
-# ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
 
 
@@ -165,13 +158,10 @@ MAILERS = {
         "OPTIONS": {
             "host": "smtp.zoho.com",
             "port": 587,
-            "use_tls": True,
-            # "username": env("EMAIL_HOST_USER"),
-            "username": os.environ.get("EMAIL_HOST_USER"),
-            # "password": env("EMAIL_HOST_PASSWORD"),
+            "use_tls": True,            
+            "username": os.environ.get("EMAIL_HOST_USER"),           
             "password": os.environ.get("EMAIL_HOST_PASSWORD"),
-        },
-        # "DEFAULT_FROM_EMAIL": env("EMAIL_HOST_USER"),
+        },        
         "DEFAULT_FROM_EMAIL": os.environ.get("EMAIL_HOST_USER"),
     }
 }
