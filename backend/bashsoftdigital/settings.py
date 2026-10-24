@@ -183,8 +183,10 @@ LOGGING = {
     "handlers": {
         "file": {
             "level": "ERROR",
-            "class": "logging.FileHandler",
-            "filename": BASE_DIR / "logs/django_errors.log",  # ✅ create logs folder
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": BASE_DIR / "logs" / "django_errors.log",
+            "maxBytes": 1024*1024*5,  # 5 MB per file
+            "backupCount": 5,         # keep 5 backups
             "formatter": "verbose",
         },
         "console": {
