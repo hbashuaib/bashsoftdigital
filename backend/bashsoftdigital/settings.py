@@ -108,6 +108,33 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.bashsoftdigital.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://bashsoftdigital.com",
+    "https://www.bashsoftdigital.com",
+]
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
 
