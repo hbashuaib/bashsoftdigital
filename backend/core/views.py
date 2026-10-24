@@ -20,7 +20,8 @@ def contact(request):
         send_mail(
             subject,
             body,
-            settings.MAILERS["default"]["DEFAULT_FROM_EMAIL"],  # ✅ same as testemail.py
+            # settings.MAILERS["default"]["DEFAULT_FROM_EMAIL"],  # ✅ same as testemail.py
+            settings.DEFAULT_FROM_EMAIL
             ["info@bashsoftdigital.com"],                      # or forward to Gmail
             fail_silently=False,
         )
