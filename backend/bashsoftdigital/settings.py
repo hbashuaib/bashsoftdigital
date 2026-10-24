@@ -32,9 +32,11 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG", default=False)
+# DEBUG = env.bool("DJANGO_DEBUG", default=False)
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
+# ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
 
 
 # Application definition
@@ -164,10 +166,13 @@ MAILERS = {
             "host": "smtp.zoho.com",
             "port": 587,
             "use_tls": True,
-            "username": env("EMAIL_HOST_USER"),
-            "password": env("EMAIL_HOST_PASSWORD"),
+            # "username": env("EMAIL_HOST_USER"),
+            "username": os.environ.get("EMAIL_HOST_USER"),
+            # "password": env("EMAIL_HOST_PASSWORD"),
+            "password": os.environ.get("EMAIL_HOST_PASSWORD"),
         },
-        "DEFAULT_FROM_EMAIL": env("EMAIL_HOST_USER"),
+        # "DEFAULT_FROM_EMAIL": env("EMAIL_HOST_USER"),
+        "DEFAULT_FROM_EMAIL": os.environ.get("EMAIL_HOST_USER"),
     }
 }
 
