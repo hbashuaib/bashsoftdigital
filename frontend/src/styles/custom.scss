@@ -1,0 +1,350 @@
+// Import Bootstrap functions first
+@import "~bootstrap/scss/functions";
+
+html[lang="ar"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+html[lang="en"] body {
+  direction: ltr;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ensure spacing around toggle button */
+.lang-toggle-btn {
+  margin: 0 1rem;   // space between brand and menus
+}
+
+.lang-toggle-btn span {
+  margin-inline-start: 6px;   // adds spacing between icon and text in both EN and AR
+}
+
+.lang-toggle-btn {
+  transition: all 0.2s ease;
+}
+
+.lang-toggle-btn:hover {
+  background-color: rgba(255,255,255,0.15);  // soft glow
+  text-decoration: underline;                // underline text
+  border-color: #fff;                        // brighten border
+}
+
+/* Ensure proper spacing for list bullets in RTL */
+html[lang="ar"] ul {
+  padding-right: 1.5rem;   // adds space before bullets
+  padding-left: 0;         // remove default left padding
+}
+
+html[lang="en"] ul {
+  padding-left: 1.5rem;    // normal spacing for LTR
+  padding-right: 0;
+}
+
+
+/* RTL mode spacing fix */
+html[lang="ar"] .lang-toggle-btn {
+  margin: 0 1rem;   // keeps equal spacing in Arabic
+}
+
+/* Navbar Menus Style */
+.nav-link-custom {
+  color: #ffffff !important;       // base white
+  margin-left: 15px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  color: #e0f0ff !important;       // light bluish hover
+  text-decoration: underline;
+}
+
+.nav-link-custom.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff; // underline bar for active
+}
+
+/* Mobile Navbar Fix */
+@media (max-width: 991.98px) {   // Bootstrap lg breakpoint
+  .navbar-collapse {
+    max-height: 80vh;            // prevent overflow
+    overflow-y: auto;            // scroll if too many items
+    padding: 1rem;               // spacing inside collapse
+    background-color: rgba(21, 101, 192, 0.95); // deep blue overlay
+  }
+
+  .navbar-nav {
+    flex-direction: column;      // stack vertically
+    align-items: flex-start;     // align left (or right in RTL)
+    width: 100%;                 // full width links
+  }
+
+  .nav-link-custom {
+    margin: 0.5rem 0;            // vertical spacing between links
+    width: 100%;                 // clickable full width
+    text-align: inherit;         // respects LTR/RTL
+  }
+}
+
+
+// --- Theme Overrides ---
+$primary: #1565c0;   // deep blue
+$secondary: #1e88e5; // lighter blue
+$body-bg: #e3f2fd;
+$body-color: #0d47a1;
+
+// ✅ Use rem for font size, unitless for line height
+$font-family-sans-serif: 'Segoe UI', sans-serif;
+$font-size-base: 1rem;       // 16px equivalent
+$line-height-base: 1.5;      // unitless multiplier
+$border-radius: 0.5rem;      // 8px equivalent
+
+// --- Typography Scale ---
+$headings-font-weight: 600;
+$headings-color: $primary;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+// --- Spacing Scale ---
+$spacer: 1rem; // base spacing unit
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25, // 4px
+  2: $spacer * 0.5,  // 8px
+  3: $spacer,        // 16px
+  4: $spacer * 1.5,  // 24px
+  5: $spacer * 3     // 48px
+);
+
+// --- Global Custom Card Styling ---
+.custom-card {
+  background-color: #fff !important;        // white background for contrast
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+}
+
+.custom-card-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: cover;
+  height: 180px; // consistent thumbnail height
+}
+
+.custom-card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1565c0;                // deep blue for emphasis
+  margin-bottom: 0.75rem;
+}
+
+.custom-card-subtitle {
+  font-weight: 600;
+  color: #1e88e5;                // lighter blue accent
+  margin-top: 1rem;
+}
+
+
+// --- Hero Banner Styling ---
+.hero-banner {
+  width: 100%;              // fill left to right
+  height: 500px;            // fixed height for desktop
+  aspect-ratio: 16 / 9;     // keep proper 16:9 ratio
+  background-size: cover;   // fill entire area
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;             // ✅ flexbox for centering
+  align-items: center;       // vertical center
+  justify-content: center;   // horizontal center
+  border-radius: 0;         // full bleed, no rounded corners
+  box-shadow: none;         // clean look
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.2);   // semi-transparent overlay for readability
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  color: #fff;                   // white text for contrast
+  max-width: 800px;   
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+// Responsive tweaks
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 300px;               // smaller height for mobile
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+// --- Hero Carousel Styling ---
+.hero-carousel {
+  max-width: 1000px;   // keeps carousel centered, not full edge-to-edge
+  margin: 0 auto;      // center horizontally
+  border-radius: 0.5rem;
+  overflow: hidden;    // ensures rounded corners apply to images
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;       // keep natural 16:9 ratio
+    object-fit: cover;  // ensures image fills frame nicely
+  }
+
+  .carousel-caption {
+    background: rgba(0,0,0,0.4); // semi-transparent overlay
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+}
+
+// Responsive tweaks
+@media (max-width: 768px) {
+  .hero-carousel-img {
+    height: 200px;     // smaller height for mobile
+  }
+}
+
+// --- Custom Wide Cards Styling ---
+.custom-card-wide {
+  width: 100%;
+  max-width: 1000px;   // keeps it nicely centered  
+  padding: 1rem;
+}
+
+.custom-card-wide li {
+  list-style-type: disc;
+  margin-inline-start: 1rem;  // works in both LTR and RTL
+}
+
+// --- Custom Detail Cards Styling ---
+.custom-card-detail {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Pricing Table Styling */
+.pricing-table th {
+  vertical-align: bottom;   // keeps header text aligned at bottom
+  text-align: center;       // center align headers
+  font-weight: 600;
+}
+
+.pricing-table td {
+  vertical-align: middle;
+}
+
+/* Default: English (LTR) → left aligned */
+.pricing-table td:first-child {
+  text-align: left;         // ✅ Module names left aligned
+  font-weight: 500;         // slightly bolder for readability
+}
+
+/* Arabic (RTL) → right aligned */
+[dir="rtl"] .pricing-table td:first-child {
+  text-align: right;
+}
+
+.pricing-table td:not(:first-child) {
+  text-align: center;       // ✅ Prices centered under headers
+}
+
+.pricing-table .header-sub {
+  display: block;           // forces onto new line
+  font-size: 0.85rem;       // smaller font
+  font-weight: 400;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+
+// Import Bootstrap with overrides
+@import "~bootstrap/scss/bootstrap";
+
+// --- Custom Global Styles ---
+body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: map-get($spacers, 3);
+}
+p {
+  margin-bottom: map-get($spacers, 3);
+}
+section {
+  padding: map-get($spacers, 5) 0;
+}
+
+// Footer Style
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;               // spacing between links
+  margin-top: 8px;
+}
+
+.footer-link {
+  display: inline-flex;    // keeps icon + text together
+  align-items: center;
+  gap: 6px;                // spacing between icon and text
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #e0f0ff;
+}
+
+.footer-icon {
+  flex-shrink: 0;
+}
+
+/* Mobile tweak: stack links vertically */
+@media (max-width: 576px) {
+  .footer-links {
+    flex-direction: column;   // stack one per line
+    align-items: center;      // center them
+  }
+
+  .footer-link {
+    width: 100%;              // full width tap target
+    justify-content: center;  // center icon + text
+  }
+}

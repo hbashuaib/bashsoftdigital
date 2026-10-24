@@ -1,0 +1,220 @@
+{
+  "trainings": [
+    {
+      "id": "office",
+      "title": "Microsoft Office Suite",
+      "description": "Comprehensive training on Word, Excel, PowerPoint, Outlook, and Access.",
+      "features": ["Word", "Excel", "PowerPoint", "Outlook", "Access"],
+      "benefits": ["Boost productivity", "Professional documentation", "Effective communication"],
+      "targets": ["Students", "Office workers", "Managers"],
+      "modules": [
+        {
+          "name": "Microsoft Word (2019) - Associate",
+          "code": "MO-100",
+          "training": { "cost": "$60", "duration": "20 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Word (365) - Associate",
+          "code": "MO-110",
+          "training": { "cost": "$60", "duration": "20 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Word (2019) - Expert",
+          "code": "MO-101",
+          "training": { "cost": "$90", "duration": "25 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Word (365) - Expert",
+          "code": "MO-111",
+          "training": { "cost": "$90", "duration": "25 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Excel (2019) - Associate",
+          "code": "MO-200",
+          "training": { "cost": "$70", "duration": "22 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Excel (365) - Associate",
+          "code": "MO-210",
+          "training": { "cost": "$70", "duration": "22 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Excel (2019) - Expert",
+          "code": "MO-201",
+          "training": { "cost": "$100", "duration": "25 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Excel (365) - Expert",
+          "code": "MO-211",
+          "training": { "cost": "$100", "duration": "25 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft PowerPoint (2019)",
+          "code": "MO-300",
+          "training": { "cost": "$60", "duration": "20 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft PowerPoint (365)",
+          "code": "MO-310",
+          "training": { "cost": "$60", "duration": "20 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Outlook (2019)",
+          "code": "MO-400",
+          "training": { "cost": "$50", "duration": "15 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Outlook (365)",
+          "code": "MO-410",
+          "training": { "cost": "$50", "duration": "15 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        },
+        {
+          "name": "Microsoft Access (2019/365) - Expert",
+          "code": "MO-500",
+          "training": { "cost": "$90", "duration": "25 hours" },
+          "exam": { "cost": "$100", "duration": "50 minutes" }
+        }
+      ],
+      "image": "office.jpg",
+      "link": "/trainings/office",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+
+    {
+      "id": "maintenance",
+      "title": "Computer Maintenance (CompTIA A+)",
+      "description": "Learn to troubleshoot, repair, and maintain PCs and laptops.",
+      "features": [
+        "Hardware diagnostics",
+        "OS installation & configuration",
+        "Upgrades & repairs",
+        "Preventive maintenance"
+      ],
+      "benefits": ["Reliable systems", "Reduced downtime", "Cost savings"],
+      "targets": ["IT technicians", "Small businesses", "Schools"],
+      "modules": [
+        {
+          "name": "CompTIA A+ Core 1",
+          "code": "220-1101",
+          "training": { "cost": "$90", "duration": "30 hours" },
+          "exam": { "cost": "$246", "duration": "90 minutes" }
+        },
+        {
+          "name": "CompTIA A+ Core 2",
+          "code": "220-1102",
+          "training": { "cost": "$90", "duration": "30 hours" },
+          "exam": { "cost": "$246", "duration": "90 minutes" }
+        }
+      ],
+      "image": "maintenance.jpg",
+      "link": "/trainings/maintenance",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+
+    {
+      "id": "networking",
+      "title": "Networking & Security (CompTIA)",
+      "description": "Understand LAN/WAN setup, IP addressing, routing, and security fundamentals.",
+      "features": ["LAN/WAN setup", "IP addressing", "Routing basics", "Network security"],
+      "benefits": ["Strong IT backbone", "Secure connectivity", "Career foundation"],
+      "targets": ["SMEs", "IT staff", "Students"],
+      "modules": [
+        {
+          "name": "CompTIA Network+",
+          "code": "N10-008",
+          "training": { "cost": "$100", "duration": "35 hours" },
+          "exam": { "cost": "$358", "duration": "90 minutes" }
+        },
+        {
+          "name": "CompTIA Security+",
+          "code": "SY0-701",
+          "training": { "cost": "$100", "duration": "40 hours" },
+          "exam": { "cost": "$392", "duration": "90 minutes" }
+        }
+      ],
+      "image": "networking.jpg",
+      "link": "/trainings/networking",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+
+    {
+      "id": "cisco",
+      "title": "Cisco Training",
+      "description": "Prepare for CCNA and CCNP certifications.",
+      "features": ["CCNA prep", "Router/switch setup", "Network security", "VPN configuration"],
+      "benefits": ["Industry certification", "Career advancement", "Hands-on skills"],
+      "targets": ["IT professionals", "Network engineers", "Students"],
+      "modules": [
+        {
+          "name": "Cisco CCNA",
+          "code": "200-301",
+          "training": { "cost": "$100", "duration": "40 hours" },
+          "exam": { "cost": "$300", "duration": "120 minutes" }
+        },
+        {
+          "name": "Cisco CCNP Enterprise",
+          "code": "350-401 (Core) + 300-xxx (Concentration)",
+          "training": { "cost": "$130", "duration": "60 hours" },
+          "exam": { "cost": "$400 per exam", "duration": "120 minutes each" }
+        }
+      ],
+      "image": "cisco.jpg",
+      "link": "/trainings/cisco",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "programming",
+      "title": "Programming Languages",
+      "description": "Master Python, Java, JavaScript, and C# for modern development.",
+      "features": ["Python basics", "Java OOP", "JavaScript web apps", "C# enterprise apps"],
+      "benefits": ["Build applications", "Automate tasks", "Career growth"],
+      "targets": ["Students", "Developers", "Startups"],
+      "modules": [
+        {
+          "name": "Python Institute PCAP",
+          "code": "PCAP-31-03",
+          "training": { "cost": "$90", "duration": "30 hours" },
+          "exam": { "cost": "$295", "duration": "65 minutes" }
+        },
+        {
+          "name": "Oracle Java SE Programmer",
+          "code": "1Z0-819",
+          "training": { "cost": "$100", "duration": "35 hours" },
+          "exam": { "cost": "$245", "duration": "150 minutes" }
+        },
+        {
+          "name": "JavaScript Frontend Development",
+          "code": "Self-paced certification",
+          "training": { "cost": "$80", "duration": "30 hours" },
+          "exam": { "cost": "$150", "duration": "90 minutes" }
+        },
+        {
+          "name": "Microsoft C# Certification",
+          "code": "Exam 70-483 (legacy)",
+          "training": { "cost": "$100", "duration": "35 hours" },
+          "exam": { "cost": "$165", "duration": "120 minutes" }
+        }
+      ],
+      "image": "programming.jpg",
+      "link": "/trainings/programming",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    }
+  ]
+}

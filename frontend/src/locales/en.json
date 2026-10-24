@@ -1,0 +1,603 @@
+{
+  "applications": "Applications",
+  "services": "Services",
+  "trainings": "Trainings",
+  "development": "Development",
+  "profile": "Profile",
+  "contact": "Contact",
+
+  "landing": {
+    "apps": {
+      "title": "Applications",
+      "description": "Explore our suite of apps designed to connect, entertain, and simplify your digital life."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Professional IT, networking, and consulting services tailored to your business needs."
+    },
+    "trainings": {
+      "title": "Trainings",
+      "description": "Hands-on training in Microsoft Office, Networking, Cisco, and programming languages."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Custom web and mobile app development solutions built with modern frameworks."
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Meet Hussein Bashuaib — IT & Quality Manager, Trainer at DHL, and founder of BashSoft Digital."
+    }
+  },
+
+  "hero": {
+    "title": "Welcome to BashSoft Digital",
+    "subtitle": "Digital • IT • Training • Development"
+  },
+
+  "carousel": {
+    "bashchat": {
+      "name": "BashChat",
+      "caption": "Discover what BashChat brings to your digital journey."
+    },
+    "bashflex": {
+      "name": "BashFlex",
+      "caption": "Discover what BashFlex brings to your digital journey."
+    },
+    "bashkart": {
+      "name": "BashKart",
+      "caption": "Discover what BashKart brings to your digital journey."
+    },
+    "bashmotors": {
+      "name": "BashMotors",
+      "caption": "Discover what BashMotors brings to your digital journey."
+    },
+    "status": {
+      "new": "New",
+      "upcoming": "Upcoming"
+    }
+  },
+
+  "card": {
+    "features": "Key Features:",
+    "modules": "Modules:",
+    "availableModules": "Available Modules:",
+    "benefits": "Key Benefits:",
+    "categories": "Categories:",
+    "targets": "Target Audience:",
+    "requestConsultation": "Request Consultation"
+  },
+
+  "apps": {
+    "pageTitle": "Applications",
+    "learnMore": "Learn More",
+    "general": {
+      "title": "Custom Applications for Personal & Business",
+      "description": "At BashSoft Digital, we design and develop applications tailored to your needs. Whether you’re an individual looking for a personal productivity tool or a business seeking enterprise-grade solutions, we deliver scalable, secure, and user-friendly apps.",
+      "categories": {
+        "personal": "Personal apps: productivity, communication, lifestyle",
+        "business": "Business apps: workflow automation, e-commerce, CRM",
+        "training": "Training apps: e-learning platforms, course management",
+        "it": "IT solutions: networking, authentication, infrastructure tools"
+      }
+    },
+    "bashchat": {
+      "title": "BashChat",
+      "description": "A real-time chat application with a modern WhatsApp-style interface, designed for seamless communication.",
+      "benefits": {
+        "0": "Secure communication with text, images, voice, and video",
+        "1": "Data stored locally on client servers/machines for maximum privacy",
+        "2": "Easy group collaboration with multimedia support",
+        "3": "Professional blueish theme"
+      },
+      "features": {
+        "0": "Send text, images, voice, and video messages",
+        "1": "Group chat support with multimedia",
+        "2": "Local server storage for complete security",
+        "3": "Modern WhatsApp-style UI"
+        },    
+      "targets": {
+        "0": "Businesses needing private internal communication",
+        "1": "Teams and organizations that value data sovereignty",
+        "2": "Individuals who want a secure alternative to cloud-based messengers"
+      }
+    },
+    "bashflex": {
+      "title": "BashFlex",
+      "description": "A movie, series, and sports streaming application optimized for local and internet use.",
+      "benefits": {
+        "0": "Local streaming without internet",
+        "1": "Integration with MikroTik User Manager",
+        "2": "Configurable for internet streaming",
+        "3": "Optimized file formats for fast playback"
+      },
+      "features": {
+        "0": "Netflix-style streaming interface",
+        "1": "Works with MikroTik User Manager for local streaming",
+        "2": "Supports internet streaming configuration",
+        "3": "Optimized video formats for speed"
+      },
+      "targets": {
+        "0": "Internet cafés and hotspot providers",
+        "1": "Communities with limited internet access",
+        "2": "Entertainment businesses needing controlled streaming",
+        "3": "Individuals wanting a Netflix-style experience offline"
+      }
+    },
+    "bashkart": {
+      "title": "BashKart",
+      "description": "A commercial e-commerce app similar to Amazon, enabling secure online shopping.",
+      "benefits": {
+        "0": "Full e-commerce functionality",
+        "1": "Secure online purchasing",
+        "2": "Instant reporting and analytics",
+        "3": "Automated email confirmations"
+      },
+      "features": {
+        "0": "Product catalog and search",
+        "1": "Secure checkout process",
+        "2": "Instant reporting and email notifications",
+        "3": "Responsive design for mobile and desktop"
+      },
+      "targets": {
+        "0": "Retailers and online entrepreneurs",
+        "1": "Businesses expanding into digital sales",
+        "2": "Customers seeking a reliable marketplace",
+        "3": "Organizations needing integrated reporting"
+      }
+    },
+    "bashmotors": {
+      "title": "BashMotors",
+      "description": "A digital marketplace and showroom for cars, offering sales, maintenance, and online purchasing.",
+      "benefits": {
+        "0": "Digital showroom for car sales",
+        "1": "Online ordering and purchasing",
+        "2": "Service booking and transaction tracking",
+        "3": "Modern interface for buyers and dealerships"
+      },
+      "features": {
+        "0": "Car listings with detailed specs",
+        "1": "Online purchase and order management",
+        "2": "Maintenance and service booking",
+        "3": "Dealer integration and comparison tools"
+      },
+      "targets": {
+        "0": "Car dealerships and service centers",
+        "1": "Buyers browsing vehicles online",
+        "2": "Automotive businesses seeking digital presence",
+        "3": "Motor enthusiasts exploring cars and services"
+      }
+    },
+     "notFound": {
+      "title": "Application Not Found",
+      "description": "The application you are looking for does not exist."
+    },    
+    "detail": {
+      "about": "About",
+      "learn": "Learn how",
+      "journey": "can transform your digital journey."
+    }
+  },  
+
+  "servicespage": {
+    "pageTitle": "Freelancing Services",
+    "exploreMore": "Explore More",
+    "software": {
+      "title": "Software & App Development",
+      "description": "Custom software, mobile apps, and e-commerce solutions tailored for your business needs.",
+      "features": {
+        "0": "ERP & CRM systems",
+        "1": "Mobile-first apps (React Native, Flutter)",
+        "2": "Cloud deployment & DevOps pipelines"
+      },
+      "benefits": {
+        "0": "Scalable solutions for SMEs",
+        "1": "Localized for bilingual markets",
+        "2": "Secure and optimized performance"
+      },
+      "targets": {
+        "0": "Startups needing custom apps",
+        "1": "Retailers moving online",
+        "2": "Enterprises upgrading legacy systems"
+      }
+    },
+    "networking": {
+      "title": "Networking & IT Infrastructure",
+      "description": "Professional setup and management of enterprise networks, servers, and security systems.",
+      "features": {
+        "0": "Cisco & MikroTik configuration",
+        "1": "LAN/WAN & wireless setup",
+        "2": "Cybersecurity audits & VPN solutions"
+      },
+      "benefits": {
+        "0": "Reliable connectivity",
+        "1": "Secure infrastructure",
+        "2": "Optimized performance"
+      },
+      "targets": {
+        "0": "SMEs needing IT backbone",
+        "1": "Educational institutions",
+        "2": "Corporate offices"
+      }
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "description": "ROI-driven campaigns across social media, SEO, and email marketing.",
+      "features": {
+        "0": "Social media management",
+        "1": "Performance ad campaigns",
+        "2": "SEO optimization"
+      },
+      "benefits": {
+        "0": "Increased brand visibility",
+        "1": "Higher customer engagement",
+        "2": "Measurable ROI"
+      },
+      "targets": {
+        "0": "Retail businesses",
+        "1": "Online platforms",
+        "2": "Service providers"
+      }
+    },
+    "content": {
+      "title": "Content & Localization",
+      "description": "High-quality content creation, translation, and localization services.",
+      "features": {
+        "0": "Arabic copywriting",
+        "1": "Translation & localization",
+        "2": "Video scripts & blogs"
+      },
+      "benefits": {
+        "0": "Accurate bilingual communication",
+        "1": "Cultural relevance",
+        "2": "Professional documentation"
+      },
+      "targets": {
+        "0": "Businesses expanding regionally",
+        "1": "Educational platforms",
+        "2": "Media & marketing agencies"
+      }
+    },
+    "design": {
+      "title": "UI/UX & Brand Design",
+      "description": "Modern design solutions to enhance user experience and brand identity.",
+      "features": {
+        "0": "UI/UX design",
+        "1": "Brand identity creation",
+        "2": "Design system implementation"
+      },
+      "benefits": {
+        "0": "Improved user satisfaction",
+        "1": "Consistent brand presence",
+        "2": "Professional look & feel"
+      },
+      "targets": {
+        "0": "Startups building digital products",
+        "1": "Businesses refreshing brand identity",
+        "2": "Agencies needing design systems"
+      }
+    },    
+    "notFound": {
+      "title": "Service Not Found",
+      "description": "The service you are looking for does not exist."
+    },
+    "detail": {
+      "about": "About",
+      "learn": "Learn how",
+      "growth": "can support your business growth."
+    }  
+  },
+
+  "trainingspage": {
+    "pageTitle": "Trainings",
+    "exploreMore": "Explore More",
+    "office": {
+      "title": "Microsoft Office Suite",
+      "description": "Comprehensive training on Word, Excel, PowerPoint, Outlook, and Access.",
+      "benefits": {
+        "0": "Boost productivity",
+        "1": "Professional documentation",
+        "2": "Effective communication"
+      },
+      "features": {
+        "0": "Word",
+        "1": "Excel",
+        "2": "PowerPoint",
+        "3": "Outlook",
+        "4": "Access"
+      },
+      "targets": {
+        "0": "Students",
+        "1": "Office workers",
+        "2": "Managers"
+      },
+      "modules": {
+        "0": { "name": "Microsoft Word (2019) - Associate" },
+        "1": { "name": "Microsoft Word (365) - Associate" },
+        "2": { "name": "Microsoft Word (2019) - Expert" },
+        "3": { "name": "Microsoft Word (365) - Expert" },
+        "4": { "name": "Microsoft Excel (2019) - Associate" },
+        "5": { "name": "Microsoft Excel (365) - Associate" },
+        "6": { "name": "Microsoft Excel (2019) - Expert" },
+        "7": { "name": "Microsoft Excel (365) - Expert" },
+        "8": { "name": "Microsoft PowerPoint (2019)" },
+        "9": { "name": "Microsoft PowerPoint (365)" },
+        "10": { "name": "Microsoft Outlook (2019)" },
+        "11": { "name": "Microsoft Outlook (365)" },
+        "12": { "name": "Microsoft Access (2019/365) - Expert" }
+      }
+    },
+    "maintenance": {
+      "title": "Computer Maintenance (CompTIA A+)",
+      "description": "Learn to troubleshoot, repair, and maintain PCs and laptops.",
+      "benefits": {
+        "0": "Reliable systems",
+        "1": "Reduced downtime",
+        "2": "Cost savings"
+      },
+      "features": {
+        "0": "Hardware diagnostics",
+        "1": "OS installation & configuration",
+        "2": "Upgrades & repairs",
+        "3": "Preventive maintenance"
+      },
+      "targets": {
+        "0": "IT technicians",
+        "1": "Small businesses",
+        "2": "Schools"
+      },
+      "modules": {
+        "0": { "name": "CompTIA A+ Core 1" },
+        "1": { "name": "CompTIA A+ Core 2" }
+      }
+    },
+    "networking": {
+      "title": "Networking & Security (CompTIA)",
+      "description": "Understand LAN/WAN setup, IP addressing, routing, and security fundamentals.",
+      "benefits": {
+        "0": "Strong IT backbone",
+        "1": "Secure connectivity",
+        "2": "Career foundation"
+      },
+      "features": {
+        "0": "LAN/WAN setup",
+        "1": "IP addressing",
+        "2": "Routing basics",
+        "3": "Network security"
+      },
+      "targets": {
+        "0": "SMEs",
+        "1": "IT staff",
+        "2": "Students"
+      },
+      "modules": {
+        "0": { "name": "CompTIA Network+" },
+        "1": { "name": "CompTIA Security+" }
+      }
+    },
+    "cisco": {
+      "title": "Cisco Training",
+      "description": "Prepare for CCNA and CCNP certifications.",
+      "benefits": {
+        "0": "Industry certification",
+        "1": "Career advancement",
+        "2": "Hands-on skills"
+      },
+      "features": {
+        "0": "CCNA prep",
+        "1": "Router/switch setup",
+        "2": "Network security",
+        "3": "VPN configuration"
+      },
+      "targets": {
+        "0": "IT professionals",
+        "1": "Network engineers",
+        "2": "Students"
+      },
+      "modules": {
+        "0": { "name": "Cisco CCNA" },
+        "1": { "name": "Cisco CCNP Enterprise" }
+      }
+    },
+    "programming": {
+      "title": "Programming Languages",
+      "description": "Master Python, Java, JavaScript, and C# for modern development.",
+      "benefits": {
+        "0": "Build applications",
+        "1": "Automate tasks",
+        "2": "Career growth"
+      },
+      "features": {
+        "0": "Python basics",
+        "1": "Java OOP",
+        "2": "JavaScript web apps",
+        "3": "C# enterprise apps"
+      },
+      "targets": {
+        "0": "Students",
+        "1": "Developers",
+        "2": "Startups"
+      },
+      "modules": {
+        "0": { "name": "Python Institute PCAP" },
+        "1": { "name": "Oracle Java SE Programmer" },
+        "2": { "name": "JavaScript Frontend Development" },
+        "3": { "name": "Microsoft C# Certification" }
+      }
+    },
+    "notFound": {
+      "title": "Training Not Found",
+      "description": "The training you are looking for does not exist."
+    },
+    "detail": {
+      "about": "About",
+      "learn": "Learn how",
+      "skills": "can enhance your skills and career opportunities.",
+      "tableTitle": "Training & Exam Details",
+      "module": "Module",
+      "code": "Code",
+      "trainingCost": "Training Cost",
+      "trainingDuration": "Training Duration",
+      "examCost": "Exam Cost",
+      "examDuration": "Exam Duration",
+      "noTraining": "Training info not available",
+      "noExam": "Exam info not available"
+    },
+    "units": {
+      "usd": "$",
+      "hours": "hours",
+      "minutes": "minutes"
+    }
+  },
+
+  "devpage": {
+    "pageTitle": "Application Development",
+    "exploreMore": "Explore More",
+    "web": {
+      "title": "Web Application Development",
+      "description": "Design and build scalable, responsive web applications tailored to your business needs.",
+      "features": {
+        "0": "React, Angular, or Vue frontends",
+        "1": "Django, Node.js, or ASP.NET backends",
+        "2": "REST & GraphQL APIs",
+        "3": "Database integration (Postgres, MySQL, MongoDB)"
+      },
+      "benefits": {
+        "0": "Modern responsive design",
+        "1": "Secure and scalable architecture",
+        "2": "Optimized performance"
+      },
+      "targets": {
+        "0": "Startups",
+        "1": "SMEs",
+        "2": "Enterprises"
+      },
+      "modules": {
+        "0": "Single Page Applications (SPA)",
+        "1": "Progressive Web Apps (PWA)",
+        "2": "E-commerce Platforms",
+        "3": "Custom Dashboards",
+        "4": "Corporate Websites"
+      }
+    },
+    "mobile": {
+      "title": "Mobile Application Development",
+      "description": "Native and cross-platform mobile apps for iOS and Android.",
+      "features": {
+        "0": "React Native & Flutter",
+        "1": "Native iOS (Swift) & Android (Kotlin)",
+        "2": "Push notifications & offline support",
+        "3": "App Store & Play Store deployment"
+      },
+      "benefits": {
+        "0": "Cross-platform efficiency",
+        "1": "Smooth user experience",
+        "2": "Scalable mobile solutions"
+      },
+      "targets": {
+        "0": "Retail businesses",
+        "1": "Service providers",
+        "2": "Startups"
+      },
+      "modules": {
+        "0": "E-commerce Mobile Apps",
+        "1": "AI-powered Mobile Apps",
+        "2": "Social Media Apps",
+        "3": "Business Productivity Tools",
+        "4": "Custom Utility Apps"
+      }
+    },
+    "custom": {
+      "title": "Custom Solutions",
+      "description": "Tailored software solutions built to solve unique business challenges.",
+      "features": {
+        "0": "Requirement analysis & prototyping",
+        "1": "Custom ERP & CRM systems",
+        "2": "Workflow automation",
+        "3": "Integration with existing systems"
+      },
+      "benefits": {
+        "0": "Fully tailored to your needs",
+        "1": "Improved efficiency",
+        "2": "Competitive advantage"
+      },
+      "targets": {
+        "0": "Enterprises",
+        "1": "Government projects",
+        "2": "Specialized industries"
+      },
+      "modules": {
+        "0": "ERP Customization",
+        "1": "CRM Development",
+        "2": "Workflow Automation Tools",
+        "3": "Custom ERP Integrations",
+        "4": "Industry-specific Applications"
+      }
+    },
+    "notFound": {
+      "title": "Development Service Not Found",
+      "description": "The development service you are looking for does not exist."
+    },
+    "detail": {
+      "about": "About",
+      "learn": "Learn how",
+      "growth": "can support your business growth with tailored solutions."
+    }
+  },
+
+  "profilepage": {
+    "pageTitle": "My Profile",
+    "name": "Hussein Abdallah Bashuaib",
+    "subtitle": "Founder & CEO – BashSoft Digital",
+    "bio1": "I am a seasoned IT and operations leader with over 19 years of experience at DHL Yemen, where I progressed from IT roles to Deputy Country Manager. My career has spanned IT systems, logistics, quality management, and country-level operations, consistently delivering measurable improvements in efficiency, compliance, and stakeholder engagement.",
+    "bio2": "Since March 2026, I have been fully dedicated to building BashSoft Digital, my own technology business focused on application development, IT solutions, and digital transformation. At BashSoft Digital, I design and deliver modern web and mobile applications with professional UI/UX, multilingual support, and scalable architecture tailored to the needs of businesses in the Middle East and beyond.",
+    "bio3": "My expertise includes Microsoft 365 workflow optimization, Docker deployments, Django backend systems, React frontends, and MikroTik networking. I am passionate about combining technical accuracy with professional design to create solutions that empower organizations and individuals.",
+    "quickFacts": {
+      "title": "Quick Facts",
+      "location": "📍 Based in Aden, Yemen",
+      "founder": "🚀 Founder of BashSoft Digital (2026 – Present)",
+      "dhl": "💼 Former Deputy Country Manager, DHL Yemen (2006 – 2026)",
+      "education": "🎓 Bachelor of Computer Science – Queen Arwa University",
+      "languages": "🌐 Languages: English (Fluent), Swahili (Fluent), Arabic (Intermediate)",
+      "skills": "⚙️ Skills: Django, React, Docker, MikroTik, SAP, ERP/WMS",
+      "awards": "🏆 Awards: DHL Employee of the Year, MENA Quality #1"
+    }
+  },
+
+  "contactpage": {
+    "pageTitle": "Contact Us",
+    "connectTitle": "Connect with Us",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp"
+  },
+
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message.",
+    "networkError": "Network error.",
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter a valid email address.",
+      "messageRequired": "Please enter your message."
+    },
+    "placeholders": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "message": "Write your message"
+    },
+    "thankYouTitle": "Thank You!",
+    "thankYouMessage": "Your message has been sent successfully. We will get back to you soon.",
+    "reset": "Send Another Message"
+  },
+
+  "footer": {
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp"
+  }
+}

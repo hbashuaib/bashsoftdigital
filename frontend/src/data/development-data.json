@@ -1,0 +1,88 @@
+{
+  "development": [
+    {
+      "id": "web",
+      "title": "Web Application Development",
+      "description": "Design and build scalable, responsive web applications tailored to your business needs.",
+      "features": [
+        "React, Angular, or Vue frontends",
+        "Django, Node.js, or ASP.NET backends",
+        "REST & GraphQL APIs",
+        "Database integration (Postgres, MySQL, MongoDB)"
+      ],
+      "benefits": [
+        "Modern responsive design",
+        "Secure and scalable architecture",
+        "Optimized performance"
+      ],
+      "targets": ["Startups", "SMEs", "Enterprises"],
+      "modules": [
+        "Single Page Applications (SPA)",
+        "Progressive Web Apps (PWA)",
+        "E-commerce Platforms",
+        "Custom Dashboards",
+        "Corporate Websites"
+      ],
+      "image": "web.jpg",
+      "link": "/development/web",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile Application Development",
+      "description": "Native and cross-platform mobile apps for iOS and Android.",
+      "features": [
+        "React Native & Flutter",
+        "Native iOS (Swift) & Android (Kotlin)",
+        "Push notifications & offline support",
+        "App Store & Play Store deployment"
+      ],
+      "benefits": [
+        "Cross-platform efficiency",
+        "Smooth user experience",
+        "Scalable mobile solutions"
+      ],
+      "targets": ["Retail businesses", "Service providers", "Startups"],
+      "modules": [
+        "E-commerce Mobile Apps",
+        "AI-powered Mobile Apps",
+        "Social Media Apps",
+        "Business Productivity Tools",
+        "Custom Utility Apps"
+      ],
+      "image": "mobile.jpg",
+      "link": "/development/mobile",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "custom",
+      "title": "Custom Solutions",
+      "description": "Tailored software solutions built to solve unique business challenges.",
+      "features": [
+        "Requirement analysis & prototyping",
+        "Custom ERP & CRM systems",
+        "Workflow automation",
+        "Integration with existing systems"
+      ],
+      "benefits": [
+        "Fully tailored to your needs",
+        "Improved efficiency",
+        "Competitive advantage"
+      ],
+      "targets": ["Enterprises", "Government projects", "Specialized industries"],
+      "modules": [
+        "ERP Customization",
+        "CRM Development",
+        "Workflow Automation Tools",
+        "Custom ERP Integrations",
+        "Industry-specific Applications"
+      ],
+      "image": "custom.jpg",
+      "link": "/development/custom",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    }
+  ]
+}

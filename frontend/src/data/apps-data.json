@@ -1,0 +1,111 @@
+{
+  "apps": [
+    {
+      "id": "bashchat",
+      "title": "BashChat",
+      "description": "A real-time chat application with a modern WhatsApp-style interface, designed for seamless communication.",
+      "benefits": [
+        "Secure communication with text, images, voice, and video",
+        "Data stored locally on client servers/machines for maximum privacy",
+        "Easy group collaboration with multimedia support",
+        "Professional blueish theme"
+      ],
+      "features": [
+        "Send text, images, voice, and video messages",
+        "Group chat support with multimedia",
+        "Local server storage for complete security",
+        "Modern WhatsApp-style UI"
+      ],
+      "targets": [
+        "Businesses needing private internal communication",
+        "Teams and organizations that value data sovereignty",
+        "Individuals who want a secure alternative to cloud-based messengers"
+      ],
+      "image": "bashchat.jpg",
+      "screenshots": ["bashchat-1.jpg", "bashchat-2.jpg", "bashchat-3.jpg"],
+      "link": "/apps/bashchat",
+      "cta": "Learn More"
+    },
+    {
+      "id": "bashflex",
+      "title": "BashFlex",
+      "description": "A movie, series, and sports streaming application optimized for local and internet use.",
+      "benefits": [
+        "Local streaming without internet",
+        "Integration with MikroTik User Manager",
+        "Configurable for internet streaming",
+        "Optimized file formats for fast playback"
+      ],
+      "features": [
+        "Netflix-style streaming interface",
+        "Works with MikroTik User Manager for local streaming",
+        "Supports internet streaming configuration",
+        "Optimized video formats for speed"
+      ],
+      "targets": [
+        "Internet cafés and hotspot providers",
+        "Communities with limited internet access",
+        "Entertainment businesses needing controlled streaming",
+        "Individuals wanting a Netflix-style experience offline"
+      ],
+      "image": "bashflex.jpg",
+      "screenshots": ["bashflex-1.jpg", "bashflex-2.jpg"],
+      "link": "/apps/bashflex",
+      "cta": "Learn More"
+    },
+    {
+      "id": "bashkart",
+      "title": "BashKart",
+      "description": "A commercial e-commerce app similar to Amazon, enabling secure online shopping.",
+      "benefits": [
+        "Full e-commerce functionality",
+        "Secure online purchasing",
+        "Instant reporting and analytics",
+        "Automated email confirmations"
+      ],
+      "features": [
+        "Product catalog and search",
+        "Secure checkout process",
+        "Instant reporting and email notifications",
+        "Responsive design for mobile and desktop"
+      ],
+      "targets": [
+        "Retailers and online entrepreneurs",
+        "Businesses expanding into digital sales",
+        "Customers seeking a reliable marketplace",
+        "Organizations needing integrated reporting"
+      ],
+      "image": "bashkart.jpg",
+      "screenshots": ["bashkart-1.jpg", "bashkart-2.jpg"],
+      "link": "/apps/bashkart",
+      "cta": "Learn More"
+    },
+    {
+      "id": "bashmotors",
+      "title": "BashMotors",
+      "description": "A digital marketplace and showroom for cars, offering sales, maintenance, and online purchasing.",
+      "benefits": [
+        "Digital showroom for car sales",
+        "Online ordering and purchasing",
+        "Service booking and transaction tracking",
+        "Modern interface for buyers and dealerships"
+      ],
+      "features": [
+        "Car listings with detailed specs",
+        "Online purchase and order management",
+        "Maintenance and service booking",
+        "Dealer integration and comparison tools"
+      ],
+      "targets": [
+        "Car dealerships and service centers",
+        "Buyers browsing vehicles online",
+        "Automotive businesses seeking digital presence",
+        "Motor enthusiasts exploring cars and services"
+      ],
+      "image": "bashmotors.jpg",
+      "screenshots": ["bashmotors-1.jpg", "bashmotors-2.jpg", "bashmotors-3.jpg"],
+      "link": "/apps/bashmotors",
+      "cta": "Learn More"
+    }
+  ]
+}

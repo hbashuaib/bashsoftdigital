@@ -1,0 +1,124 @@
+{
+  "services": [
+    {
+      "id": "software",
+      "title": "Software & App Development",
+      "description": "Custom software, mobile apps, and e-commerce solutions tailored for your business needs.",
+      "features": [
+        "ERP & CRM systems",
+        "Mobile-first apps (React Native, Flutter)",
+        "Cloud deployment & DevOps pipelines"
+      ],
+      "benefits": [
+        "Scalable solutions for SMEs",
+        "Localized for bilingual markets",
+        "Secure and optimized performance"
+      ],
+      "targets": [
+        "Startups needing custom apps",
+        "Retailers moving online",
+        "Enterprises upgrading legacy systems"
+      ],
+      "image": "software.jpg",
+      "link": "/services/software",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "networking",
+      "title": "Networking & IT Infrastructure",
+      "description": "Professional setup and management of enterprise networks, servers, and security systems.",
+      "features": [
+        "Cisco & MikroTik configuration",
+        "LAN/WAN & wireless setup",
+        "Cybersecurity audits & VPN solutions"
+      ],
+      "benefits": [
+        "Reliable connectivity",
+        "Secure infrastructure",
+        "Optimized performance"
+      ],
+      "targets": [
+        "SMEs needing IT backbone",
+        "Educational institutions",
+        "Corporate offices"
+      ],
+      "image": "networking.jpg",
+      "link": "/services/networking",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "marketing",
+      "title": "Digital Marketing",
+      "description": "ROI-driven campaigns across social media, SEO, and email marketing.",
+      "features": [
+        "Social media management",
+        "Performance ad campaigns",
+        "SEO optimization"
+      ],
+      "benefits": [
+        "Increased brand visibility",
+        "Higher customer engagement",
+        "Measurable ROI"
+      ],
+      "targets": [
+        "Retail businesses",
+        "Online platforms",
+        "Service providers"
+      ],
+      "image": "marketing.jpg",
+      "link": "/services/marketing",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "content",
+      "title": "Content & Localization",
+      "description": "High-quality content creation, translation, and localization services.",
+      "features": [
+        "Arabic copywriting",
+        "Translation & localization",
+        "Video scripts & blogs"
+      ],
+      "benefits": [
+        "Accurate bilingual communication",
+        "Cultural relevance",
+        "Professional documentation"
+      ],
+      "targets": [
+        "Businesses expanding regionally",
+        "Educational platforms",
+        "Media & marketing agencies"
+      ],
+      "image": "content.jpg",
+      "link": "/services/content",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    },
+    {
+      "id": "design",
+      "title": "UI/UX & Brand Design",
+      "description": "Modern design solutions to enhance user experience and brand identity.",
+      "features": [
+        "UI/UX design",
+        "Brand identity creation",
+        "Design system implementation"
+      ],
+      "benefits": [
+        "Improved user satisfaction",
+        "Consistent brand presence",
+        "Professional look & feel"
+      ],
+      "targets": [
+        "Startups building digital products",
+        "Businesses refreshing brand identity",
+        "Agencies needing design systems"
+      ],
+      "image": "design.jpg",
+      "link": "/services/design",
+      "cta": "Explore More",
+      "ctaContact": "/contact"
+    }
+  ]
+}
