@@ -21,7 +21,7 @@ def contact(request):
             subject,
             body,
             # settings.MAILERS["default"]["DEFAULT_FROM_EMAIL"],  # ✅ same as testemail.py
-            settings.DEFAULT_FROM_EMAIL
+            settings.DEFAULT_FROM_EMAIL,
             ["info@bashsoftdigital.com"],                      # or forward to Gmail
             fail_silently=False,
         )
