@@ -179,19 +179,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
-MAILERS = {
-    "default": {
-        "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
-        "OPTIONS": {
-            "host": "smtp.zoho.com",
-            "port": 587,
-            "use_tls": True,            
-            "username": os.environ.get("EMAIL_HOST_USER"),           
-            "password": os.environ.get("EMAIL_HOST_PASSWORD"),
-        },        
-        "DEFAULT_FROM_EMAIL": os.environ.get("EMAIL_HOST_USER"),
-    }
-}
+# MAILERS = {
+#     "default": {
+#         "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
+#         "OPTIONS": {
+#             "host": "smtp.zoho.com",
+#             "port": 587,
+#             "use_tls": True,            
+#             "username": os.environ.get("EMAIL_HOST_USER"),           
+#             "password": os.environ.get("EMAIL_HOST_PASSWORD"),
+#         },        
+#         "DEFAULT_FROM_EMAIL": os.environ.get("EMAIL_HOST_USER"),
+#     }
+# }
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.zoho.com"
