@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import contact
+from .views import ContactView
 
 from django.http import JsonResponse
 
@@ -8,5 +8,5 @@ def api_root(request):
 
 urlpatterns = [
     path("", api_root),  # now /api/ responds
-    path('contact/', contact, name='contact'),
+    path('contact/', ContactView.as_view(), name='contact'),
 ]

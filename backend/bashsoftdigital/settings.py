@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
-import environ
 import os
 from pathlib import Path
 
@@ -21,19 +20,16 @@ smtplib.SMTP.debuglevel = 1
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("DJANGO_SECRET_KEY")
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG", default=False)
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
 
 
 # Application definition
@@ -112,6 +108,33 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.bashsoftdigital.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://bashsoftdigital.com",
+    "https://www.bashsoftdigital.com",
+]
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
 
@@ -156,28 +179,36 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
-MAILERS = {
-    "default": {
-        "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
-        "OPTIONS": {
-            "host": "smtp.zoho.com",
-            "port": 587,
-            "use_tls": True,
-            "username": env("EMAIL_HOST_USER"),
-            "password": env("EMAIL_HOST_PASSWORD"),
-        },
-        "DEFAULT_FROM_EMAIL": env("EMAIL_HOST_USER"),
-    }
-}
+# MAILERS = {
+#     "default": {
+#         "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
+#         "OPTIONS": {
+#             "host": "smtp.zoho.com",
+#             "port": 587,
+#             "use_tls": True,            
+#             "username": os.environ.get("EMAIL_HOST_USER"),           
+#             "password": os.environ.get("EMAIL_HOST_PASSWORD"),
+#         },        
+#         "DEFAULT_FROM_EMAIL": os.environ.get("EMAIL_HOST_USER"),
+#     }
+# }
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.zoho.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.zoho.com"
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+# EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+# Immediate testing backend (no SMTP, prints emails to console/log)
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
+
+# Zoho Email API
+ZOHO_MAIL_API_URL = f"https://mail.zoho.com/api/accounts/{os.environ.get('ZOHO_ACCOUNT_ID')}/messages"
+ZOHO_ACCESS_TOKEN = os.environ.get("ZOHO_ACCESS_TOKEN")
+DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
 
 # Logging configuration for production
 LOGGING = {
