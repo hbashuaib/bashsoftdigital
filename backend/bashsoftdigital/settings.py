@@ -205,7 +205,7 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.pythonanywhere.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "hbashuaib"
+EMAIL_HOST_USER = "husseinbashuaib@gmail.com"
 EMAIL_HOST_PASSWORD = "Ghaith@27@Lamis"
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
