@@ -134,6 +134,8 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
+CORS_ALLOW_ALL_ORIGINS = False  # keep strict
+CORS_ALLOW_CREDENTIALS = True   # allow cookies/headers if needed
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
