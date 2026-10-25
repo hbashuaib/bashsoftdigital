@@ -202,9 +202,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Immediate testing backend (no SMTP, prints emails to console/log)
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
 
+# Zoho Email API
+ZOHO_MAIL_API_URL = f"https://mail.zoho.com/api/accounts/{os.environ.get('ZOHO_ACCOUNT_ID')}/messages"
+ZOHO_ACCESS_TOKEN = os.environ.get("ZOHO_ACCESS_TOKEN")
+DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
 
 # Logging configuration for production
 LOGGING = {
