@@ -4,12 +4,15 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.conf import settings
-from core.utils import send_zoho_mail
 
 logger = logging.getLogger("core")
 
 
 class ContactView(APIView):
+    """
+    Handles contact form submissions via Zoho SMTP.
+    """
+
     def post(self, request):
         name = request.data.get("name")
         email = request.data.get("email")
@@ -19,16 +22,17 @@ class ContactView(APIView):
         body = f"Name: {name}\nEmail: {email}\nMessage:\n{message}"
 
         try:
-            status_code, resp = send_zoho_mail(
+            send_mail(
                 subject,
                 body,
-                "info@bashsoftdigital.com"
+                settings.DEFAULT_FROM_EMAIL,          # sender (Zoho account)
+                ["info@bashsoftdigital.com"],         # recipient (your inbox)
+                fail_silently=False,
             )
-            if status_code == 200:
-                return Response({"success": True}, status=status.HTTP_200_OK)
-            else:
-                logger.error(f"Zoho API error: {resp}")
-                return Response({"error": "Zoho API error"}, status=500)
+            return Response({"success": True}, status=status.HTTP_200_OK)
         except Exception as e:
             logger.error("Contact form error", exc_info=True)
-            return Response({"error": "Error sending message."}, status=500)
+            return Response(
+                {"error": "Error sending message."},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )
