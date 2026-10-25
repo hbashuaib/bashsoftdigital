@@ -201,13 +201,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.pythonanywhere.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "husseinbashuaib@gmail.com"
-EMAIL_HOST_PASSWORD = "Ghaith@27@Lamis"
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# Immediate testing backend (no SMTP, prints emails to console/log)
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "info@bashsoftdigital.com"
 
 
 # Logging configuration for production
